@@ -22,7 +22,7 @@ def main():
     search: SearchWord = SearchWord()
     consumed: DateHelper = DateHelper()
     sys.stdout.flush()
-    os.system('color 0A')
+    os.system('color 0B')
     display_once = False
     clear_console.clearConsole()
     while True:
@@ -64,7 +64,6 @@ def main():
             continue
 
         if choice == 'Browser Artifacts':
-            print("here you can choice one of browser process")
             profiles = helper.get_profiles()
             profile_choice = choices.choices_profiles(profiles)
             profile_index = profiles.index(profile_choice)

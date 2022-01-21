@@ -29,3 +29,4 @@ class SearchWord:
             dd_commend = f'dd.exe if=memory/memdump.raw of=memory/keyfinds/{offset}.txt bs=1 skip={offset_count} count={word_count}'
             # dd_commend = f'dd.exe if=memory/memdump.raw of=memory/offset_count.txt bs=1 skip=639294170 count=20'
             subprocess.call(dd_commend, stderr=noError)
+            

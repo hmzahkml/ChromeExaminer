@@ -7,7 +7,7 @@ class Choices():
         os.system('color 0A')
         questions = [
             inquirer.List('answer',
-                          message="What artifacts do you need?",
+                          message="Retrieve artifacts from?",
                           choices=['Browser Artifacts', 'Memory Artifacts', 'Exit'],
                           ),
         ]
@@ -29,7 +29,7 @@ class Choices():
         os.system('color 0A')
         questions = [
             inquirer.List('answer',
-                          message="What Type of Memory do You Need?",
+                          message="Memory acquisition menu:",
                           choices=['Memory Acquisition', 'Memory Key Finds', 'Back'],
                           ),
         ]
@@ -40,7 +40,7 @@ class Choices():
         os.system('color 0A')
         questions = [
             inquirer.List('answer',
-                          message="What Type of Browsing do You Need?",
+                          message="What Type of Browsing data do You Need?",
                           choices=[ 'history', 'fingerprint', 'downloads', 'login data', 'Exit'],
                           ),
         ]
@@ -49,9 +49,9 @@ class Choices():
 
     def social_media_domain(self):
         os.system('color 0A')
-        questions = [
+        questions = [ 
             inquirer.List('answer',
-                          message="What Type of Memory do You Need?",
+                          message="Choose the platform?",
                           choices=['facebook', 'twitter', 'tiktok', 'all', 'Back'],
                           ),
         ]
@@ -62,7 +62,7 @@ class Choices():
         os.system('color 0A')
         questions = [
             inquirer.List('answer',
-                          message="What artifacts do you need?",
+                          message="Choose the profile?",
                           choices=profiles,
                           ),
         ]
